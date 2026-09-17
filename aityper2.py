@@ -3,9 +3,12 @@ import time
 import threading
 import pyautogui
 from openai import OpenAI
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # --- Configuration ---
-client = OpenAI(api_key= "OPENAI_API_KEY")
+client = OpenAI()
 # --- Typing Control ---
 typing_canceled = False
 
